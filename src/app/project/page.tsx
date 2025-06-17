@@ -165,6 +165,12 @@ const Page = () => {
           </div>
         ))}
       </div>
+
+      {filteredProjects.length === 0 && (
+        <div className="text-center py-12 text-gray-500 h-65">
+          해당 카테고리에는 프로젝트가 없습니다!
+        </div>
+      )}
     </main>
   );
 };
